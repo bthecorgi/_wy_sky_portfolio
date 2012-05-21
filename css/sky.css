@@ -1,0 +1,163 @@
+#sky_nav {
+	margin-left: auto;
+	margin-right: auto;
+	width: 320px;
+	float: none;
+}
+.navbar .nav {
+	font-size:16px;
+	padding: 10px 0;
+}
+.cover_images {
+	margin: 80px 0;
+	background: url('../img/cover_img.png') no-repeat;
+	height: 334px;
+	width: 1033px;
+}
+.cover_title {
+	background: url('../img/WelcomeSign.png') no-repeat;
+	height: 142px;
+	width: 1078px;
+}
+.nav_logo {
+	background: url('../img/Logo.png') no-repeat;
+	height: 37px;
+	width: 321px;
+	position: relative;
+	top: 40px;
+}
+.nav {
+/*	left: 180px !important; */
+}
+.navbar .nav > li > a {
+	padding-left: 20px !important;
+	padding-right: 20px !important;
+}
+.nav_indicator {
+	background: url('../img/triangle.png') no-repeat;
+	height: 10px;
+	width: 20px;
+	position:relative;
+	top: 28px;
+}
+.container, .navbar-fixed-top .container, .navbar-fixed-bottom .container 
+{
+	/*width: 1078px !important;*/
+}
+.orange
+{
+	color: orange;
+}
+.slider_description {
+	height: 500px;
+	border: 1px solid silver;
+	float: left;
+}
+.slider_description .span {
+	padding: 10px 0;
+}
+#portfolio_title {
+	border: 1px solid silver;
+	padding: 10px 20px;
+	margin: 30px 0;
+	width: 180px;
+	clear: both;
+	box-shadow: 3px 3px 3px #888;
+	font-size: 20px;
+}
+.slider_left {
+	background: url('../img/arrow-left.png') no-repeat;
+	width: 24px;
+	height: 84px;
+	float: left;
+}
+.slider_control {
+	top: 200px;
+	position: relative;
+	cursor: pointer;
+}
+.slider_left:hover {
+	background: url('../img/arrow-left-hover.png') no-repeat;
+} 
+.slider_thumb {
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+}
+.slider_right {
+	background: url('../img/arrow-right.png') no-repeat;
+	width: 24px;
+	height: 84px;
+	float: left;
+}
+.slider_right:hover {
+	background: url('../img/arrow-right-hover.png') no-repeat;
+}
+.slider_viewer {
+	width: 700px;
+	height: 460px;
+	float: left;
+	border: 1px solid silver;
+	padding-top: 40px;
+}
+.slider {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 20px;
+}
+.slider_thumbs {
+	padding-left: 100px;
+	height: 100px;
+	width: 700px;
+} 
+.slider_thumb1 { background: url('../img/slider_images/IMC.png') no-repeat;}
+.slider_thumb1.active, .slider_thumb1:hover {	background: url('../img/slider_images/IMCclick.png') no-repeat;}
+.slider_thumb2 { background: url('../img/slider_images/WildChef.png') no-repeat;}
+.slider_thumb2.active, .slider_thumb2:hover {	background: url('../img/slider_images/WildChefclick.png') no-repeat;}
+.slider_thumb3 { background: url('../img/slider_images/AR.png') no-repeat;}
+.slider_thumb3.active, .slider_thumb3:hover { background: url('../img/slider_images/ARclick.png') no-repeat;}
+.slider_thumb4 { background: url('../img/slider_images/IMC_I.png') no-repeat;}
+.slider_thumb4.active, .slider_thumb4:hover { background: url('../img/slider_images/IMC_Iclick.png') no-repeat;}
+.slider_thumb5 { background: url('../img/slider_images/exposure.png') no-repeat;}
+.slider_thumb5.active, .slider_thumb5:hover { background: url('../img/slider_images/exposureclick.png') no-repeat;}
+.slider_thumb6 { background: url('../img/slider_images/ROM.png') no-repeat;}
+.slider_thumb6.active, .slider_thumb6:hover { background: url('../img/slider_images/ROMclick.png') no-repeat;}
+.slider_thumb7 { background: url('../img/slider_images/nutcracker.png') no-repeat;}
+.slider_thumb7.active, .slider_thumb7:hover { background: url('../img/slider_images/nutcrackerclick.png') no-repeat;}
+.slider_thumb8 { background: url('../img/slider_images/santiago.png') no-repeat; }
+.slider_thumb8.active, .slider_thumb8:hover { background: url('../img/slider_images/santiagoclick.png') no-repeat; }
+.contact_form {
+	width: 600px;
+	height: 400px;
+	border: 1px solid silver;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+}
+.contact_inner {
+	background-color: #efefef;
+	padding: 20px;
+	height: 360px;
+}
+.contact_send {
+	margin: 10px;
+	padding: 15px 30px;
+	font-size: 20px;
+	width: 150px;
+}
+.contact_form input {
+	border-radius: 10px;
+}
+.contact_form input[type='text'], .contact_form input[type='email'] {
+	height: 50px;
+}
+.shadow {
+	box-shadow: 0 0 5px 5px #efefef;
+}
+.css_nav_indicator {
+	border-color: #2C2C2C #2C2C2C white #2C2C2C;
+	border-style:solid;
+	border-width:10px 10px 10px 10px;
+	width:0;
+	height:0;
+}
