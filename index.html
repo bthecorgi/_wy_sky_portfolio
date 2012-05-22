@@ -10,8 +10,10 @@
 		<script src="bootstrap/js/bootstrap.min.js"></script> 
 		<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
 		<script src="js/galleria/galleria-1.2.7.min.js"></script>
+		<script src="js/jquery-validate/jquery.validate.min.js"></script>
 		<script src="js/prettyPhoto/js/jquery.prettyPhoto.js"></script>
 		<script src="js/sky.js"></script>
+		<script src="js/sky_email_form.js"></script>
 	</head>
 	<body>
 		<div class="navbar navbar-fixed-top">
@@ -103,14 +105,14 @@
 						<fieldset class="control-group">
 						<div class="contact_inner">
 							<div>
-								<input type="text" id="contact_name" style="width: 270px;" placeholder="name" />
-								<input type="email" id="contact_email" style="width: 270px;" placeholder="email" />
+								<input type="text" id="contact_name" style="width: 270px;" placeholder="name" class="text required" />
+								<input type="email" id="contact_email" style="width: 270px;" placeholder="email" class="email required" />
 							</div>
 							<div>
 								<textarea id="contact_message" style="width: 540px;height: 240px;" placeholder="message"></textarea>
 							</div>
 							<div>
-								<input type="button" value="SEND" class="contact_send btn btn-warning"/>
+								<input type="submit" value="SEND" id="btn_submit" class="contact_send btn btn-warning text required"/>
 							</div>
 						</div>
 						</fieldset>

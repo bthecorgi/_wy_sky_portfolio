@@ -13,7 +13,7 @@
 	}
     else
 	{
-		$error .= "your email seems to be missing!\n";
+		$error .= "Your email seems to be missing!\n";
 	}
 	if(isset($_POST['msg']))
 	{
@@ -26,8 +26,8 @@
 
 	if ($_POST['key'] == "pass")
 	{
-		$to = "no-reply-inquiry@willyau.com";
-		$subject = "[willyau.com form] - {$_POST['fname']}";
+		$to = "contact@sarahkateyau.com";
+		$subject = "[sarahkateyau.com form] - {$_POST['fname']}";
 		if ($_POST['msg'] != "")
 		{
 			$message = "{$_POST['fname']} had the following message:\n{$_POST['msg']}";
@@ -46,11 +46,11 @@
             $subject_confirm = "[Confirmation] We have received your inquiry - Will Yau Photography";
             $message_confirm = $_POST['fname'] . ",\n\n";
             $message_confirm .= "This is an automated email.  \n\n";
-            $message_confirm .= "Thank you for your interest.  We will be in touch with you very soon!  If you prefer to reach us by phone, please call 416.602.8205.  Alternatively, you can email us at photos@willyau.com.\n\n";
+            $message_confirm .= "Thank you for your interest.  We will be in touch with you very soon!  If you prefer to reach us by phone, please call 416.602.8205.  Alternatively, you can email us at contact@sarahkateyau.com.\n\n";
             $message_confirm .= "Will Yau Photography\n";
             $headers_confirm = "";
-            $headers_confirm .= "From: [Confirmation] Will Yau Photography <no-reply-inquiry@willyau.com>\n";
-            $headers_confirm .= "Reply-To: Will Yau Photography <photos@willyau.com>\n";
+            $headers_confirm .= "From: [Confirmation] Will Yau Photography <contact@sarahkateyau.com>\n";
+            $headers_confirm .= "Reply-To: Will Yau Photography <contact@sarahkateyau.com>\n";
             $headers_confirm .= "X-Mailer: PHP4\n" ; // mailer
             $headers_confirm .= "X-Priority: 3\n" ;  // priority
             $headers_confirm .= "Return-Path:  $to\n";

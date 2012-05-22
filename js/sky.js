@@ -260,10 +260,6 @@ function sky()
 		{
 			_move_indicator(2);
 		}
-	}
-	,_setup_form = function()
-	{
-		
 	};
 	$('#link_me, .nav_logo').click(function()
 	{
@@ -292,10 +288,10 @@ function sky()
 	$('#portfolio_imc_swf').prettyPhoto({social_tools: false});
 	_load_galleria();
 	_move_indicator_to_position(CONST_INDICATOR_ME, 'instant');
-	_setup_form();
 };
 
 $().ready(function()
 {
 	var s = new sky();
+	var email_form = new sky_email_form();
 });
