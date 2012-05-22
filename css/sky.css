@@ -11,13 +11,18 @@
 .cover_images {
 	margin: 80px 0;
 	background: url('../img/cover_img.png') no-repeat;
-	height: 334px;
-	width: 1033px;
+	height: 226px;
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 200px;
 }
 .cover_title {
 	background: url('../img/WelcomeSign.png') no-repeat;
-	height: 142px;
-	width: 1078px;
+	height: 92px;
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
 }
 .nav_logo {
 	background: url('../img/Logo.png') no-repeat;
@@ -101,15 +106,14 @@
 	padding-top: 40px;
 }
 .slider {
-	margin-top: 20px;
-	margin-bottom: 20px;
 	padding: 20px;
 }
 .slider_thumbs {
 	padding-left: 100px;
 	height: 100px;
 	width: 700px;
-} 
+	margin-bottom: 100px;
+}
 .slider_thumb1 { background: url('../img/slider_images/IMC.png') no-repeat;}
 .slider_thumb1.active, .slider_thumb1:hover {	background: url('../img/slider_images/IMCclick.png') no-repeat;}
 .slider_thumb2 { background: url('../img/slider_images/WildChef.png') no-repeat;}

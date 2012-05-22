@@ -1,8 +1,8 @@
 function sky()
 {
 	var CONST_TOP_ME = 0;
-	var CONST_TOP_CREATIVE = 730;
-	var CONST_TOP_CONTACT = 1470;
+	var CONST_TOP_CREATIVE = 720;
+	var CONST_TOP_CONTACT = 1487;
 	var CONST_SLIDE_DURATION = 500;						// in ms.
 	var CONST_INDICATOR_ME = 402;						// left value
 	var CONST_INDICATOR_CREATIVE = 492;					// left value

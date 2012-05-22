@@ -43,14 +43,14 @@
 		if (mail($to,$subject,$message,$headers)) {
 
             $to_confirm = $_POST['email'];
-            $subject_confirm = "[Confirmation] We have received your inquiry - Will Yau Photography";
+            $subject_confirm = "[Confirmation] We have received your inquiry - Sarah Kate Yau";
             $message_confirm = $_POST['fname'] . ",\n\n";
             $message_confirm .= "This is an automated email.  \n\n";
             $message_confirm .= "Thank you for your interest.  We will be in touch with you very soon!  If you prefer to reach us by phone, please call 416.602.8205.  Alternatively, you can email us at contact@sarahkateyau.com.\n\n";
-            $message_confirm .= "Will Yau Photography\n";
+            $message_confirm .= "\n";
             $headers_confirm = "";
-            $headers_confirm .= "From: [Confirmation] Will Yau Photography <contact@sarahkateyau.com>\n";
-            $headers_confirm .= "Reply-To: Will Yau Photography <contact@sarahkateyau.com>\n";
+            $headers_confirm .= "From: [Confirmation] Sarah Kate Yau <contact@sarahkateyau.com>\n";
+            $headers_confirm .= "Reply-To: Sarah Kate Yau <contact@sarahkateyau.com>\n";
             $headers_confirm .= "X-Mailer: PHP4\n" ; // mailer
             $headers_confirm .= "X-Priority: 3\n" ;  // priority
             $headers_confirm .= "Return-Path:  $to\n";
