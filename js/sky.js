@@ -1,24 +1,24 @@
 function sky()
 {
 	var CONST_TOP_ME = 0;
-	var CONST_TOP_CREATIVE = 720;
+	var CONST_TOP_CREATIVE = 710;
 	var CONST_TOP_CONTACT = 1487;
 	var CONST_SLIDE_DURATION = 500;						// in ms.
-	var CONST_INDICATOR_ME = 402;						// left value
-	var CONST_INDICATOR_CREATIVE = 492;					// left value
-	var CONST_INDICATOR_CONTACT = 608;					// LEFT VALUE
+	var CONST_INDICATOR_ME = 35;						// left value
+	var CONST_INDICATOR_CREATIVE = 140;					// left value
+	var CONST_INDICATOR_CONTACT = 268;					// LEFT VALUE
 	var CONST_INDICATOR_TOTAL_WIDTH = CONST_INDICATOR_CONTACT - CONST_INDICATOR_ME;
 	var CONST_EASING_FUNCTION = 'swing';
 	var gallery;
 
-	var portfolio_descriptions1 = {title: 'title1', message: '1'};
-	var portfolio_descriptions2 = {title: 'title2', message: '2'};
-	var portfolio_descriptions3 = {title: 'title3', message: '3'};
-	var portfolio_descriptions4 = {title: 'title4', message: '4'};
-	var portfolio_descriptions5 = {title: 'title5', message: '5'};
-	var portfolio_descriptions6 = {title: 'title6', message: '6'};
-	var portfolio_descriptions7 = {title: 'title7', message: '7'};
-	var portfolio_descriptions8 = {title: 'title8', message: '8'};
+	var portfolio_descriptions1 = {title: 'Unique Coffee Roasters', message: 'A complete and thorough examination of packaging design and creative brainstorming led to this transformation for Unique Coffee Roasters brand and packaging. Point of purchase, content hierarchy and physical packaging appearance were amongst the few elements considered in creating the final product.<br /><br />Our group felt inspired to create a design that felt alive; a mixture of energetic colours wrapped around a tall, sleek shape. This dramatic improvement allows UCR products to stand out amongst its competitors at point of purchase.'};
+	var portfolio_descriptions2 = {title: 'The Wild Chef', message: 'Large billboard advertisements are created here to encourage more watchers to tune into the adventurous culinary journey of Martin Picard, a chef in the wild cooking up dishes never dreamed of. <br /><br />Three campaign advertisements with curious imagery and an overall simplistic theme will deliver amusement and appeal to a humored yet, interested crowd.'};
+	var portfolio_descriptions3 = {title: 'VQA Ontario: Annual Report', message: 'As with many companies, Vintner\'s Quality Assessment Ontario yields annual reports with an overview of their financial year.<br /><br />This annual report is recreated from content used in their 2010 annual report but the look and layout has been redesigned with a corporate and professional appeal and includes some personally photographed images.'};
+	var portfolio_descriptions4 = {title: 'Unique Coffee Roasters Website', message: 'The UCR website is designed to mimic the brand and relay coffee knowledge and information through a visually appealing user experience. Here, customers can find out more about coffee and their origins.<br /><br />The website intends to be bold with vibrant colours and high visual content, however, balancing with breathable white space to provide information that is clearly and cleanly displayed.'};
+	var portfolio_descriptions5 = {title: 'Interactive Magazine', message: 'Exposure is an inspirational geographic magazine with beautiful imagery (personally photographed) and focus on stories about our planet; from wildlife to gorgeous hideaways.<br /><br />This revised layout based off a school project is an interactive magazine for the iPad. Focus is on navigational behaviour with clearly defined interactivity and a simple, efficient layout. This combined with strong visiual elements offers a great user experience.'};
+	var portfolio_descriptions6 = {title: 'ROM: Ancient Peru Exhibition', message: 'The Royal Ontario Museum is featur- ing a unique exhibition exploring an exceptional array of lost treasures from the Sican civilization.<br /><br />My designs for this acedemic project is provide advertising banners which express the cultural representation of the event, with visually stunning imag- ery and colours.'};
+	var portfolio_descriptions7 = {title: 'The Nutcracker Ballet', message: 'This art deco inspired project, reintroduces the highly acclaimed and outstanding ballet performance, The Nutcracker. Returning for upcoming performances in Toronto, the newly designed material presents the ballet in a different yet intriguing style, in hopes to arouse a new sense of awareness and curiosity.<br /><br />My goal in taking this stylistic approach is to withdraw from typical assumptions of a ballet. The dramatic, mysterious appeal to this poster creates different interpretations and perceptions.'};
+	var portfolio_descriptions8 = {title: 'Santiago Calatrava', message: 'To launch the opening exhibition of the well-known Spanish architect, Santiago Calatrava, this identity series includes?several promotional materials to support and promote this one-time event.<br /><br>Logo, colours and typefaces are intentionally designed to reflect the real-life structure of the Tenerife Opera House.'};
 
 	var port_description_array = [portfolio_descriptions1
 								, portfolio_descriptions2
@@ -54,7 +54,7 @@ function sky()
 		}
 		_move_indicator_timeout = setTimeout(function()
 		{
-			$('#sky_nav').find('li').each(function(i)
+			$('.sky_nav').find('li').each(function(i)
 				{
 					if (i == section_index)
 					{
@@ -76,7 +76,7 @@ function sky()
 	,_select_portfolio_description = function(slide_index)
 	{
 		$('#portfolio_title').text(port_description_array[slide_index].title);
-		$('#portfolio_description').text(port_description_array[slide_index].message);
+		$('#portfolio_description').html(port_description_array[slide_index].message);
 	}
 	,_select_portfolio_by_index = function(portfolio_index)
 	{
@@ -155,7 +155,7 @@ function sky()
 								else if (portfolio_index == 5)
 								 {
 									 $('#portfolio_exposure_swf').click();
-								 } 
+								 }
 							})
 							.css('cursor', 'pointer');
 					}
@@ -246,8 +246,8 @@ function sky()
 		}
 		// calculate the link start positions relative to the indicator position!
 		var link_me_start_position = CONST_INDICATOR_ME - $('#link_me').width() / 2;
-		var link_creative_start_position = CONST_INDICATOR_CREATIVE - $('#link_creative').width() / 2; 
-		var link_contact_start_position = CONST_INDICATOR_CONTACT - $('#link_contact').width() / 2; 
+		var link_creative_start_position = CONST_INDICATOR_CREATIVE - $('#link_creative').width() / 2;
+		var link_contact_start_position = CONST_INDICATOR_CONTACT - $('#link_contact').width() / 2;
 		if (indicator_position >= link_me_start_position && indicator_position <= link_creative_start_position)
 		{
 			_move_indicator(0);
