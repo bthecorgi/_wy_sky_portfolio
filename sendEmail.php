@@ -46,7 +46,7 @@
             $subject_confirm = "[Confirmation] We have received your inquiry - Sarah Kate Yau";
             $message_confirm = $_POST['fname'] . ",\n\n";
             $message_confirm .= "This is an automated email.  \n\n";
-            $message_confirm .= "Thank you for your interest.  We will be in touch with you very soon!  If you prefer to reach us by phone, please call 416.602.8205.  Alternatively, you can email us at contact@sarahkateyau.com.\n\n";
+            $message_confirm .= "Thank you for your interest.  I will be in touch with you very soon!  If you prefer to reach me by phone, please call 805.203.6826.  Alternatively, you can email me at contact@sarahkateyau.com.\n\n";
             $message_confirm .= "\n";
             $headers_confirm = "";
             $headers_confirm .= "From: [Confirmation] Sarah Kate Yau <contact@sarahkateyau.com>\n";
